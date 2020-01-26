@@ -101,19 +101,19 @@ void loop()
 
     imu_pub.publish(&imu_msg);
 
-    tfs_msg.header.stamp    = nh.now();
-    tfs_msg.header.frame_id = "base_link";
-    tfs_msg.child_frame_id  = "imu_link";
-    tfs_msg.transform.rotation.w = imu.quat[0];
-    tfs_msg.transform.rotation.x = imu.quat[1];
-    tfs_msg.transform.rotation.y = imu.quat[2];
-    tfs_msg.transform.rotation.z = imu.quat[3];
+    // tfs_msg.header.stamp    = nh.now();
+    // tfs_msg.header.frame_id = "base_link";
+    // tfs_msg.child_frame_id  = "imu_link";
+    // tfs_msg.transform.rotation.w = imu.quat[0];
+    // tfs_msg.transform.rotation.x = imu.quat[1];
+    // tfs_msg.transform.rotation.y = imu.quat[2];
+    // tfs_msg.transform.rotation.z = imu.quat[3];
 
-    tfs_msg.transform.translation.x = 0.0;
-    tfs_msg.transform.translation.y = 0.0;
-    tfs_msg.transform.translation.z = 0.0;
+    // tfs_msg.transform.translation.x = 0.0;
+    // tfs_msg.transform.translation.y = 0.0;
+    // tfs_msg.transform.translation.z = 0.0;
 
-    tfbroadcaster.sendTransform(tfs_msg);
+    // tfbroadcaster.sendTransform(tfs_msg);
   }
 
   nh.spinOnce();
