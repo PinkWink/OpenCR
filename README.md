@@ -1,3 +1,4 @@
+modified for OMO R1 robot by bishop pearson
 # OpenCR: Open Source Control Module for ROS [![Build Status](https://travis-ci.org/ROBOTIS-GIT/OpenCR.svg?branch=master)](https://travis-ci.org/ROBOTIS-GIT/OpenCR/)
 ![](http://emanual.robotis.com/assets/images/parts/controller/opencr10/opencr_product.png)
 
